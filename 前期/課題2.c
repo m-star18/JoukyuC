@@ -1,4 +1,3 @@
-a
 #include <stdio.h>
 #include <math.h>
 #define N 5
