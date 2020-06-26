@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+
 #define N 5
 
 struct node {
@@ -8,7 +9,7 @@ struct node {
     double dist;
 };
 
-int main(void) {
+int main() {
     struct node xy[N];
     int i;
 

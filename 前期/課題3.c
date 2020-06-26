@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 #define N 100
 #define T !0
 
 int prime[N];
 
-void make_prime(n) {
+void make_prime(int n) {
     prime[0] = T;
     prime[1] = T;
     for (int i = 2; i * i <= n; i++) {
