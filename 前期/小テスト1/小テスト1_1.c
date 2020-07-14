@@ -7,6 +7,6 @@
 int main() {
     int data[Y];
     srand((unsigned int)time(NULL));
-    for (int i = 0; i <= Y; i++)
+    for (int i = 0; i < Y; i++)
         data[i] = rand() % X;
 }
