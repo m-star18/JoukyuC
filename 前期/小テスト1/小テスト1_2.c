@@ -23,7 +23,7 @@ int main() {
     int data[Y];
     int prime[Y], idx = 0;
     srand((unsigned int) time(NULL));
-    for (int i = 0; i <= Y; i++) {
+    for (int i = 0; i < Y; i++) {
         data[i] = rand() % X;
         if (1 == is_prime(data[i])) {
             prime[idx] = data[i];
