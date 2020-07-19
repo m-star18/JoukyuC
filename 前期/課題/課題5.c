@@ -3,7 +3,6 @@
 #include <time.h>
 
 #define N 1000000
-#define CLOCK_PER_SEC 1000
 
 int compare_int(const void *a, const void *b) {
     return *(int *)a - *(int *)b;
@@ -47,6 +46,6 @@ int main() {
     search_time -= clock();
 
     printf("２分探索　結果: %d\n", ans);
-    printf("計測時間 ソート: %f[ms]\n", -(double)sort_time / CLOCK_PER_SEC);
-    printf("計測時間 ２分探索: %f[ms]\n", -(double)search_time / CLOCK_PER_SEC);
+    printf("計測時間 ソート: %f[ms]\n", -(double)sort_time / CLOCKS_PER_SEC);
+    printf("計測時間 ２分探索: %f[ms]\n", -(double)search_time / CLOCKS_PER_SEC);
 }
