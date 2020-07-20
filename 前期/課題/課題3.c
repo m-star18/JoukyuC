@@ -20,6 +20,7 @@ void make_prime(int n) {
 
 int main() {
     int value;
+
     make_prime(N);
     srand((unsigned int)time(NULL));
     for (int i = 0; i < N; i++) {

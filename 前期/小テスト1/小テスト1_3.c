@@ -21,9 +21,9 @@ int is_prime(int n) {
 }
 
 int main() {
-    int data[Y];
-    int prime[Y], idx = 0;
-    int ans = 0;
+    int data[Y], prime[Y];
+    int idx = 0, ans = 0;
+
     srand((unsigned int) time(NULL));
     for (int i = 0; i < Y; i++) {
         data[i] = rand() % X;

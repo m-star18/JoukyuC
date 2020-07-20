@@ -6,6 +6,7 @@
 
 int main() {
     int i, b, maximum, minimum;
+
     for (i = 0; i < N; i++) {
         scanf("%d", &b);
         maximum = max(b, maximum);
