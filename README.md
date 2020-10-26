@@ -28,9 +28,12 @@ JoukyuC
 │ ├ 演習
 │ │ ├ ex1.c
 │ │ ├ ex2.c
-│ │ └ ex3.c
+│ │ ├ ex3.c
+│ │ ├ ex5.c
+│ │ └ ex7.c
 │ └ 課題
-│   └ 課題1.c
+│   ├ 課題1.c
+│   └ 課題2.c
 ├ README.md
 └ LICENSE
 ```
