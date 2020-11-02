@@ -17,3 +17,17 @@ F_H_3 = $(F_HOMEWORK)/課題3/$(MAKE)
 F_H_4 = $(F_HOMEWORK)/課題4/$(MAKE)
 F_H_5 = $(F_HOMEWORK)/課題5/$(MAKE)
 
+L_H_1 = $(L_HOMEWORK)/課題1/$(MAKE)
+L_H_2 = $(L_HOMEWORK)/課題2/$(MAKE)
+L_H_3 = $(L_HOMEWORK)/課題3/$(MAKE)
+
+F_P_1 = $(F_PRACTICE)/問題1/$(MAKE)
+F_P_2 = $(F_PRACTICE)/問題2/$(MAKE)
+F_P_3 = $(F_PRACTICE)/問題3/$(MAKE)
+F_P_4 = $(F_PRACTICE)/問題4/$(MAKE)
+
+L_P_1 = $(L_PRACTICE)/ex1/$(MAKE)
+L_P_2 = $(L_PRACTICE)/ex2/$(MAKE)
+L_P_3 = $(L_PRACTICE)/ex3/$(MAKE)
+L_P_5 = $(L_PRACTICE)/ex5/$(MAKE)
+L_P_7 = $(L_PRACTICE)/ex7/$(MAKE)
