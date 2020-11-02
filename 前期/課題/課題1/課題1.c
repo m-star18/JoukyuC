@@ -5,12 +5,13 @@
 #define min(p, q) ((p) < (q) ? (p) : (q))
 
 int main() {
-    int i, b, maximum, minimum;
+    int i, b;
+    int max_b = 0, min_b = 2147483647;
 
     for (i = 0; i < N; i++) {
         scanf("%d", &b);
-        maximum = max(b, maximum);
-        minimum = min(b, minimum);
+        max_b = max(b, max_b);
+        min_b = min(b, min_b);
     }
-    printf("%d %d\n", maximum, minimum);
+    printf("%d %d\n", max_b, min_b);
 }
