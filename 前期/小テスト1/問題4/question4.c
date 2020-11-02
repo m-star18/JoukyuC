@@ -4,3 +4,5 @@ struct student {
     int english;
     float average;
 };
+
+int main() {}

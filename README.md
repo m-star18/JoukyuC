@@ -5,35 +5,38 @@
 
 ## Directory
 
+There are .c files and Makefiles in each directory.
+
 ```
 JoukyuC
 ├ 前期
 │ ├ 小テスト1
-│ │ ├ question1.c
-│ │ ├ question2.c
-│ │ ├ question3.c
-│ │ └ question4.c
+│ │ ├ 問題1
+│ │ ├ 問題2
+│ │ ├ 問題3
+│ │ └ 問題4
 │ ├ 練習
-│ │ ├ practice1.c
-│ │ ├ practice2.c
-│ │ ├ practice3.c
-│ │ └ practice4.c
+│ │ ├ 問題1
+│ │ ├ 問題2
+│ │ ├ 問題3
+│ │ └ 問題4
 │ └ 課題
-│   ├ 課題1.c
-│   ├ 課題2.c
-│   ├ 課題3.c
-│   ├ 課題4.c
-│   └ 課題5.c
+│   ├ 課題1
+│   ├ 課題2
+│   ├ 課題3
+│   ├ 課題4
+│   └ 課題5
 ├ 後期
 │ ├ 演習
-│ │ ├ ex1.c
-│ │ ├ ex2.c
-│ │ ├ ex3.c
-│ │ ├ ex5.c
-│ │ └ ex7.c
+│ │ ├ ex1
+│ │ ├ ex2
+│ │ ├ ex3
+│ │ ├ ex5
+│ │ └ ex7
 │ └ 課題
-│   ├ 課題1.c
-│   └ 課題2.c
+│   ├ 課題1
+│   ├ 課題2
+│   └ 課題3
 ├ README.md
 └ LICENSE
 ```
