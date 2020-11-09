@@ -2,6 +2,7 @@
 #include <ctype.h>
 
 #define STACK_SIZE 5
+
 int stack[STACK_SIZE];
 int sp;
 
