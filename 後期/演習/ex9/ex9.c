@@ -1,6 +1,7 @@
 ﻿#include <stdio.h>
 
 #define QUEUE_SIZE 5
+
 int queue[QUEUE_SIZE]; /* Queue Area */
 int head, tail;         /* Queue in:out Point */
 int count;             /* count of Queue member */
