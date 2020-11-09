@@ -10,6 +10,7 @@ typedef struct queue {
     int conut;
 } Queue_kouzou;
 
+/* 問題2 */
 void enterq(int data, Queue_kouzou *q) {
     if (q->conut < QUEUE_SIZE) {
         q->queue[q->tail++] = data;
@@ -60,6 +61,7 @@ void display(Queue_kouzou *q) {
     }
 }
 
+/* 問題3 */
 int main() {
     int price[] = {200, 400, 800, 100, 900, 600, 500, 300, 700, 100};
     int i = 0, value;
