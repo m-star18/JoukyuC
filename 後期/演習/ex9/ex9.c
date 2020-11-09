@@ -85,22 +85,3 @@ int main(void) {
     }
     return 0;
 }
-
-/*
-?enter(1) or remove(0) = 1
-?id = 50
-head->     0:    50
-           1:     0 <-tail
-           2:     0
-           3:     0
-           4:     0
-?continue(1) or quit(0) = 1
-?enter(1) or remove(0) = 1
-?id = 100
-head->     0:    50
-           1:   100
-           2:     0 <-tail
-           3:     0
-           4:     0
-?continue(1) or quit(0) = 0
-*/
