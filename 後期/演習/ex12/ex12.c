@@ -1,9 +1,3 @@
-/* 上級CプログラミングB 出題日：2020/11/11
-   3I 10番 氏名 伊藤竜聖 提出日：2020/11/18 */
-/* ファイル名：ex12.c
-   演習 リストの操作
-   設問 initialize(), add(), delete(), insert(), search() を作成する
-*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,39 +8,85 @@ struct Element {
 struct Element *head;
 
 /* 設問 １：リストの基本処理のための関数を作成 */
-void initialize()
-{
+void initialize() {
+    head = NULL;
 }
 
-void add(int data)
-{
+void add(int data) {
+    struct Element *p;
+
+    p = malloc(sizeof(struct Element));
+    p->data = data;
+    p->next = head;
+    head = p;
 }
 
-int delete(int data)
-{
+int delete(int data) {
+    int i;
+    struct Element *p, *q;
+
+    for (i = 0, p = q = head; p != NULL; i++, q = p, p = p->next) {
+        if (p->data == data) {
+            if (p == head) {
+                head = p->next;
+                free(p);
+
+            } else {
+            q->next = p->next;
+            free(p);
+            }
+            return i;
+        }
+    }
+    return -1;
 }
 
-void insert(int index, int data)
-{
+void insert(int index, int data) {
+    if (index <= 0 || head == NULL)
+        add(data);
+    else {
+        int i;
+        struct Element *p, *q, *r;
+
+        for (i = 0, p = q = head; i < index && p->next != NULL; i++, q = p, p = p->next) {
+            r = malloc(sizeof(struct Element));
+            r->data = data;
+            if (i == index) {
+                q->next = r;
+                r->next = p;
+
+            } else {
+                p->next = r;
+                r->next = NULL;
+            }
+        }
+    }
 }
 
-int search(int data)
-{
+int search(int data) {
+    int i;
+    struct Element *p;
+
+    for (i = 0, p = head; p != NULL; p = p->next, i++) {
+        if (p->data == data)
+            return i;
+    }
+    return -1;
 }
 
 /* displayは変更の必要はない */
-void display()
-{
+void display() {
     int i;
     struct Element *p;
-    for (i=0,p=head; p!=NULL; i++,p=p->next)
+
+    for (i = 0, p = head; p != NULL; i++, p = p->next)
         printf("%6d: %p %6d %p\n", i, p, p->data, p->next);
 }
 
-int main(void)
-{
+int main(void) {
     int mode = 1, id;
     // 線形リストの初期化
+    initialize();
 
     while (mode) {
         printf("list process ?add(1), insert(2), search(3) or delete(0) = "); 
@@ -55,6 +95,7 @@ int main(void)
             printf("?data = ");
             scanf("%d", &id);
             // 設問２：ノードの追加を実行
+            add(id);
 
         } else if (mode == 2) {
             int data;
@@ -63,18 +104,21 @@ int main(void)
             printf("?data = ");
             scanf("%d", &data);
             // 設問３：ノードの挿入を実行
+            insert(id, data);
 
         } else if (mode == 3) {
             int index;
+
             printf("?data = ");
             scanf("%d", &id);
             // 設問４：ノードの探索を実行（index = ??;）
+            index = search(id);
 
-            if (index == -1) {
+            if (index == -1)
                 printf("data = %d was not found\n", id);
-            } else {
+            else
                 printf("data = %d was found at %d\n", id, index);
-            }
+
         } else if (mode == 0) {
             printf("?data = ");
             scanf("%d", &id);
@@ -86,5 +130,3 @@ int main(void)
         scanf("%d", &mode);
     }
 }
-
-/* add(), delete(), insert(), search() の動作確認ができる出力結果を貼る */
