@@ -14,13 +14,13 @@ void node_display(struct Element *p, struct Element *q) {
     for (j = 0, r = head; r != NULL; j++, r = r->next) {
         printf("%6d: %p %6d %p", j, r, r->data, r->next);
         if (r == p && r == q)
-            printf(" <-p, q¥n");
+            printf(" <-p, q\n");
         else if (r == p)
-            printf(" <-p¥n");
+            printf(" <-p\n");
         else if (r == q)
-            printf(" <-q¥n");
+            printf(" <-q\n");
         else
-            printf("¥n");
+            printf("\n");
     }
 }
 
@@ -84,8 +84,8 @@ void display(struct Element *q) {
     for (i = 0, p = head; p != NULL; i++, p = p->next) {
         printf("%6d: %p %6d %p", i, p, p->data, p->next);
         if (p == q)
-            printf(" *****¥n");
+            printf(" *****\n");
         else
-            printf("¥n");
+            printf("\n");
     }
 }
