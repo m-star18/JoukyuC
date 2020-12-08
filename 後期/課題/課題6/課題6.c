@@ -8,6 +8,7 @@ struct Element {
     int data;
     struct Element *next;
 };
+
 struct Element *head;
 
 void display(struct Element *q) {
