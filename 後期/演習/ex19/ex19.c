@@ -1,10 +1,4 @@
-﻿/* 上級CプログラミングB 出題日：2020/12/14
-   3I 10番 氏名 伊藤竜聖 提出日：2020/12/15 */
-/* ファイル名：ex19.c
-   演習 二分探索木のノードの探索，挿入用の関数の作成
-*/
-
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 
 #define SEARCH_DATA1 35
