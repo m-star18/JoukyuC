@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-#define N 10
+#define N 11
 
-int data[N] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+int data[N] = {0, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
 void show() {
-    for (int i = 0; i < N; i++)
+    for (int i = 1; i < N; i++)
         printf("%d ", data[i]);
     printf("\n");
 }
@@ -31,10 +31,10 @@ void heap_sort() {
     int n = N - 1;
     for (int i = n / 2; i >= 1; i--)
         down_heap(n, i);
-    while (n > 0) {
-        swap(&data[0], &data[n]);
+    while (n > 1) {
+        swap(&data[1], &data[n]);
         n--;
-        down_heap(n, 0);
+        down_heap(n, 1);
         show();
     }
 }
