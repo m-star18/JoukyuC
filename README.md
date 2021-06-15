@@ -2,6 +2,7 @@
 
 - [上級CプログラミングA](https://syllabus.kosen-k.go.jp/Pages/PublicSyllabus?school_id=23&department_id=13&subject_code=33113&year=2018&lang=ja)
 - [上級CプログラミングB](https://syllabus.kosen-k.go.jp/Pages/PublicSyllabus?school_id=23&department_id=13&subject_code=33212&year=2018&lang=ja)
+- [アルゴリズムとデータ構造](https://syllabus.kosen-k.go.jp/Pages/PublicSyllabus?school_id=23&department_id=13&subject_code=34112&year=2018&lang=ja)
 
 ## Directory
 
@@ -48,6 +49,10 @@ JoukyuC
 │   ├ 課題5
 │   ├ 課題6
 │   └ 課題7
+├ Algorithm
+│ ├ Heap_sort
+│ ├ Quick_sort
+│ └ Shell_sort
 ├ README.md
 └ LICENSE
 ```
