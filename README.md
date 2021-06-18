@@ -56,3 +56,13 @@ JoukyuC
 ├ README.md
 └ LICENSE
 ```
+
+## Usage
+
+1. Clone this repository.
+2. Look at the README.md to find the file you want.
+3. Run `make run` to start the JoukyuC!
+
+## License
+
+This program is released under Unlicense.
